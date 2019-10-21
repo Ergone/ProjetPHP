@@ -4,7 +4,7 @@
         private $pseudo;
         private $mail;
         private $motdepasse;
-        private $panier;
+        private $jeux;
         private $localisation;
         // Getters
         function getPseudo() : string {
@@ -19,7 +19,7 @@
           return $this->motdepasse;
         }
 
-        function getPanier() : Panier {
+        function getJeux() : array {
           return $this->panier;
         }
 
