@@ -10,8 +10,8 @@ CREATE TABLE jeu (
 	libelle TEXT,
 	categorie INTEGER,
 	prix REAL,
+	support TEXT,
 	image TEXT,
-    support TEXT,
     quantite INTEGER,
     description TEXT,
     FOREIGN KEY(categorie) REFERENCES categorie(id)
@@ -20,7 +20,9 @@ CREATE TABLE jeu (
 CREATE TABLE categorie (
 	id INTEGER PRIMARY KEY,
 	nom TEXT,
-    image TEXT
+	description TEXT,
+  image TEXT
+
 );
 
 CREATE TABLE panier (
