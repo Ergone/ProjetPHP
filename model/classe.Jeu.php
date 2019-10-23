@@ -4,9 +4,9 @@
         private $ref;       // Référence unique
         private $libelle;   // Nom de l'article
         private $categorie; // identifiant de catégorie
-        private $prix;      // le prix
+        private $prix;
+        private $support;    // le prix
         private $image;     // Nom du fichier image
-        private $support;
         private $quantite;
         private $description;
 
