@@ -9,8 +9,7 @@ CREATE TABLE categorie (
 	id INTEGER PRIMARY KEY,
 	nom TEXT,
 	description TEXT,
-  image TEXT
-
+    image TEXT
 );
 
 CREATE TABLE jeu (
