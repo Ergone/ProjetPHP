@@ -6,7 +6,6 @@
         private $categorie; // identifiant de catégorie
         private $prix;      // le prix
         private $image;     // Nom du fichier image
-        private $panier;
         private $support;
         private $quantite;
         private $description;
@@ -32,7 +31,7 @@
           return $this->image;
         }
 
-        function getPanier() : Panier {
+        function getPanier() : array {
           return $this->panier;
         }
 

@@ -5,6 +5,14 @@ CREATE TABLE utilisateur (
     localisation TEXT
 );
 
+CREATE TABLE categorie (
+	id INTEGER PRIMARY KEY,
+	nom TEXT,
+	description TEXT,
+  image TEXT
+
+);
+
 CREATE TABLE jeu (
 	ref INTEGER PRIMARY KEY,
 	libelle TEXT,
@@ -17,13 +25,6 @@ CREATE TABLE jeu (
     FOREIGN KEY(categorie) REFERENCES categorie(id)
 );
 
-CREATE TABLE categorie (
-	id INTEGER PRIMARY KEY,
-	nom TEXT,
-	description TEXT,
-  image TEXT
-
-);
 
 CREATE TABLE panier (
 	pseudo TEXT PRIMARY KEY,
