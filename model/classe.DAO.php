@@ -98,7 +98,7 @@
                                   WHERE ref= $ref)";
             $a = $this->db->query($req);
             // Lance la requête
-            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
 
             return $articles;
         }
