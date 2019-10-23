@@ -1,0 +1,25 @@
+1|Minecraft|4|4.00|69173685.jpg
+2|Counter Strike Global Offensive|4|5.00|69394192.jpg
+3|Grand Theft Auto V|4|25.00|69681136.jpg
+4|Fifa 20|4|5.00|69598326.jpg
+5|OverWatch|4|10.00|69509622.jpg
+6|StarCraft 2|4|6.00|68137643.jpg
+7|Resident EVIL 7|4|15.00|69704026.jpg
+8|TrackMania United Forever|4|4.00|67641245.jpg
+9|StarWars BattleFront 2|4|25.00|69509601.jpg
+10|Fallout 4|4|30.00|68385275.jpg
+11|BorderLand 3|4|80.00|69706294.jpg
+12|The Sims 4|4|13.00|69608644.jpg
+13|Call Of Duty : Black Ops II|4|23.00|66970085.jpg
+14|Civilization VI|4|40.00|68385261.jpg
+15|DOOM|4|60.00|67378451.jpg
+16|BattleField 4|4|1590.00|69609141.jpg
+17|Hearts of Iron IV|4|790.00|69497190.jpg
+18|Conan Exiles|4|2520.00|68393003.jpg
+19|Dark Souls III|4|1880.00|69612851.jpg
+20|Terraria|4|579.00|69598333.jpg
+21|Stellaris|4|1325.00|68215336.jpg
+22|TEKKEN 7|4|589.00|68618312.jpg
+23|The Elder Scrolls Online|4|249.00|66844624.jpg
+24|Hitman 2|4|319.00|69598270.jpg
+25|For The King|4|2089.00|67359894.jpg

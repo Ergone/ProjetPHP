@@ -20,7 +20,7 @@
           return $this->libelle;
         }
 
-        function getCategorie() : Categorie {
+        function getCategorie() : int {
           return $this->categorie;
         }
 
