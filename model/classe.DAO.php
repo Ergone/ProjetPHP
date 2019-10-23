@@ -1,7 +1,8 @@
 <?php
 
-    require_once("../model/Categorie.class.php");
-    require_once("../model/Cla.class.php");
+    require_once("../model/classe.Utilisateur.php");
+    require_once("../model/classe.Jeu.php");
+    require_once("../model/classe.Categorie.php");
 
     // Le Data Access Object
     // Il représente la base de donnée
@@ -9,7 +10,7 @@
         // L'objet local PDO de la base de donnée
         private $db;
         // Le type, le chemin et le nom de la base de donnée
-        private $database = 'sqlite:../data/db/bricomachin.db';
+        private $database = 'sqlite:../data/db/data.db';
 
         // Constructeur chargé d'ouvrir la BD
         function __construct() {
@@ -22,51 +23,86 @@
 
         }
 
-        //
-        // // Accès à toutes les catégories
-        // // Retourne une table d'objets de type Categorie
-        // function getAllCat() : array {
-        //     $req = "SELECT * FROM categorie";
-        //     $a = $this->db->query($req);
-        //     // Lance la requête
-        //     $categories = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
-        //
-        //     return $categories;
-        // }
-        //
-        //
-        //
-        // // Accès aux n premiers articles
-        // // Cette méthode retourne un tableau contenant les n permier articles de
-        // // la base sous la forme d'objets de la classe Article.
-        // function firstN(int $n) : array {
-        //     $req = "SELECT *
-        //             FROM article
-        //             LIMIT $n ";
-        //     $a = $this->db->query($req);
-        //     // Lance la requête
-        //     $articles = $a->fetchAll(PDO::FETCH_CLASS,"Article");
-        //
-        //     return $articles;
-        //
-        // }
-        //
-        // // Acces au n articles à partir de la reférence $ref
-        // // Cette méthode retourne un tableau contenant n  articles de
-        // // la base sous la forme d'objets de la classe Article.
-        // function getN(int $ref,int $n) : array {
-        //     $req = "SELECT *
-        //             FROM article
-        //             WHERE ref>='$ref'
-        //             ORDER BY ref
-        //             LIMIT $n ";
-        //     $a = $this->db->query($req);
-        //     // Lance la requête
-        //     $articles = $a->fetchAll(PDO::FETCH_CLASS,"Article");
-        //
-        //     return $articles;
-        // }
-        //
+        // Accès à toutes les catégories
+        // Retourne une table d'objets de type Categorie
+        function getAllCategorie() : array {
+            $req = "SELECT * FROM categorie";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $categories = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
+
+            return $categories;
+        }
+
+        function getAllJeu() : array {
+            $req = "SELECT * FROM jeu";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $categories = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+
+            return $categories;
+        }
+
+        function getJeu(int $ref) : array {
+            $req = "SELECT *
+                    FROM jeu
+                    WHERE ref = $ref ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+
+            return $articles;
+
+        function getCategorie(int $id) : array {
+            $req = "SELECT *
+                    FROM categorie
+                    WHERE id = $id ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
+
+            return $articles;
+        }
+
+        function getNJeu(int $ref,int $n) : array {
+            $req = "SELECT *
+                    FROM jeu
+                    WHERE ref>=$ref
+                    ORDER BY ref
+                    LIMIT $n ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+
+            return $articles;
+        }
+
+        function getNCategorie(int $id,int $n) : array {
+            $req = "SELECT *
+                    FROM jeu
+                    WHERE ref>=$id
+                    ORDER BY ref
+                    LIMIT $n ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
+
+            return $articles;
+        }
+
+        function getPanier (int $ref) : array {
+            $req = "SELECT *
+                    FROM jeu
+                    WHERE ref IN (SELECT ref
+                                  FROM panier
+                                  WHERE ref= $ref)";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
+
+            return $articles;
+        }
+
         // // Acces à la référence qui suit la référence $ref dans l'ordre des références
         // // Retourne -1 si $ref est la dernière référence
         // function next(int $ref) : int {
