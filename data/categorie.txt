@@ -1,11 +1,11 @@
-1|Aventure|jeu focalisé sur l'exploration|img|
-2|Compilation|Compilation de jeux multi-genres|img|
-3|Course|Jeu de courses au commande d'un véhicule|img|
-4|FPS|First-Person Shooter|img|
-5|Gestion|Le joueur endosse le rôle d'un personnage qui doit construire et gérer un espace de vie/de loisir/etc|img|
-6|MMORPG|Jeu de rôle en ligne massivement multi-joueurs|img|
-7|Nouveaux genres|Catégories : Dressage,élevage, musique, danse, rythme,...|img|
-8|Plateforme|Jeu caractérisé par des sauts d'une plateforme a une autre avec des obstacles et des pièges|img|
-9|RPG|Jeu de rôle|img|
-10|simulation|Reproduit de manière réaliste la réalité|img|
-11|sport|Jeu de sport|img|
+1|Aventure|jeu focalisé sur l'exploration|Aventure.jpg
+2|Compilation|Compilation de jeux multi-genres|Compilation.jpg
+3|Course|Jeu de courses au commande d'un véhicule|Course.png
+4|FPS|First-Person Shooter|FPS.jpg
+5|Gestion|Le joueur endosse le rôle d'un personnage qui doit construire et gérer un espace de vie/de loisir/etc|Gestion.jpg
+6|MMORPG|Jeu de rôle en ligne massivement multi-joueurs|MMORPG.jpg
+7|Nouveaux genres|Catégories : Dressage,élevage, musique, danse, rythme,...|NVG.jpg
+8|Plateforme|Jeu caractérisé par des sauts d'une plateforme a une autre avec des obstacles et des pièges|Plateforme.png
+9|RPG|Jeu de rôle|RPG.jpg
+10|simulation|Reproduit de manière réaliste la réalité|Simulation.jpeg
+11|sport|Jeu de sport|Sport.jpeg

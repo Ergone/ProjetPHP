@@ -26,8 +26,9 @@ CREATE TABLE jeu (
 
 
 CREATE TABLE panier (
-	pseudo TEXT PRIMARY KEY,
-	ref INTEGER PRIMARY KEY,
+	pseudo TEXT,
+	ref INTEGER,
     FOREIGN KEY(pseudo) REFERENCES utilisateur(pseudo),
-    FOREIGN KEY(ref) REFERENCES Jeu(ref)
+    FOREIGN KEY(ref) REFERENCES Jeu(ref),
+	PRIMARY KEY (pseudo,ref)
 );
