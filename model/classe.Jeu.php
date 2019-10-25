@@ -15,6 +15,7 @@
           return $this->ref;
         }
 
+
         function getLibelle() : string {
           return $this->libelle;
         }
@@ -47,7 +48,5 @@
           return $this->description;
         }
     }
-
-
 
  ?>
