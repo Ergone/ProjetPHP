@@ -4,10 +4,9 @@
         private $ref;       // Référence unique
         private $libelle;   // Nom de l'article
         private $categorie; // identifiant de catégorie
-        private $prix;      // le prix
+        private $prix;
+        private $support;    // le prix
         private $image;     // Nom du fichier image
-        private $panier;
-        private $support;
         private $quantite;
         private $description;
 
@@ -32,7 +31,7 @@
           return $this->image;
         }
 
-        function getPanier() : Panier {
+        function getPanier() : array {
           return $this->panier;
         }
 
