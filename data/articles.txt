@@ -9,7 +9,7 @@
 9|StarWars BattleFront 2|4|62.01| Nintendo DS|SB2.jpeg|15|description
 10|Fallout 4|9|20.85| mobile|Fallout4.jpg|32|description
 11|BorderLand 3|9|31.75|gamecube|BorderLand3.jpg|64|description
-12|The Sims 4|10|64.95|gamecube|Sims4.jpg|16|description|
+12|The Sims 4|10|64.95|gamecube|Sims4.jpg|16|description
 13|Call Of Duty : Black Ops II|4|41.20|ordinateur|CODBO2.png|28|description
 14|Civilization VI|5|24.36|play station|CIV6.jpeg|37|description
 15|DOOM|4|45.21|mobile|DOOM.jpg|48|description
@@ -18,7 +18,7 @@
 18|Conan Exiles|1|31.87|play station|Conam.jpg|60|description
 19|Dark Souls III|9|36.54|xbox|DSIII.jpg|54|description
 20|Terraria|10|55.55|xbox|Terraria.jpg|21|description
-21|Stellaris|5|53.12|mobile|Stellaris.jpg|56|84|description
+21|Stellaris|5|53.12|mobile|Stellaris.jpg|84|description
 22|TEKKEN 7|11|41.20|ordinateur|TEKKEN7.jpg|30|description
 23|The Elder Scrolls Online|6|30.20|ordinateur|TESO.jpg|35|description
 24|Hitman 2|10|23.00|ordinateur|hitman2.jpg|54|description
