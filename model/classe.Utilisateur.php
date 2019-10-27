@@ -15,7 +15,7 @@
           return $this->mail;
         }
 
-        function getCategorie() : string {
+        function getMotdepasse() : string {
           return $this->motdepasse;
         }
 

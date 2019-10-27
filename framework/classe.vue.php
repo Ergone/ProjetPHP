@@ -21,7 +21,7 @@ class View {
   function display(string $filename) {
 
       // Ajoute le chemin relatif vers le fichier de la vue
-      $p = "../view/".$filename;
+      $p = "../vue/".$filename;
 
     // Tous les attributs de l'objet sont dupliqués en des variables
     // locales à la fonction display. Cela simplifie l'expression des
