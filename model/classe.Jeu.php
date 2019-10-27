@@ -32,10 +32,6 @@
           return $this->image;
         }
 
-        function getPanier() : array {
-          return $this->panier;
-        }
-
         function getSupport() : string {
           return $this->support;
         }
