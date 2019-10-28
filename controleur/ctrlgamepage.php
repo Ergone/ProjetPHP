@@ -28,7 +28,7 @@ if ($firstRef==1) {
 } else {
     $prev = $firstRef-5;
 }
-if ($firstRef==21) {
+if ($firstRef==($dao->getlastJeu()-4)) {
     $suiv= 21;
 } else {
     $suiv = $firstRef+5;

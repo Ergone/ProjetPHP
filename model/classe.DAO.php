@@ -95,6 +95,19 @@
 
         }
 
+
+        function getlastJeu(): int {
+            $req = "SELECT *
+                    FROM jeu
+                    ORDER BY ref DESC
+                    LIMIT 1 ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $articles = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+
+            return $articles[0]->getRef();
+        }
+
         function getNCategorie(int $id,int $n) : array {
             $req = "SELECT *
                     FROM jeu

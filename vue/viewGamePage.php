@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
+<?php
+  $title = 'Acceuil';
+  include 'header.php';
+ ?>
     <body>
-        <a href="#">Menu</a>
             <h1>Jeux</h1>
             <a href="?ref=<?=$prev?>">Prec</a>
             <a href="?ref=<?=$suiv?>">Suiv</a>
