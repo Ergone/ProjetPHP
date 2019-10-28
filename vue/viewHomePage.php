@@ -12,9 +12,9 @@
             <fieldset>
               <legend>Prix</legend>
               <label for="prixminimal">De</label>
-              <input type="text" name="prixmin" id="prixminimal" placeholder="0" >
+              <input type="number" name="prixmin" id="prixminimal" placeholder="0" >
               <label for="prixmaximal">à</label>
-              <input type="text" name="prixmax" id="prixmaximal" placeholder="+∞" >
+              <input type="number" name="prixmax" id="prixmaximal" placeholder="+∞" >
             </fieldset>
 
             <fieldset>
@@ -72,7 +72,7 @@
                 <input type="checkbox" name="appareil[]" id="pc" value="pc">
                 <label for="pc"></label>PC<br>
                 <input type="checkbox" name="appareil[]" id="ps4" value="ps4" >
-                <label for="europe"></label>Europe<br>
+                <label for="PS4"></label>PS4<br>
                 <input type="checkbox" name="appareil[]" id="xbox" value="xboxone" >
                 <label for="xbox"></label>Xbox One<br>
                 <input type="checkbox" name="appareil[]" id="switch" value="switch" >
