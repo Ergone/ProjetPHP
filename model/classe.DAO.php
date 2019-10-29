@@ -108,6 +108,19 @@
             return $articles[0]->getRef();
         }
 
+        function getCatJeu(int $id): array {
+            $req = "SELECT *
+                    FROM jeu
+                    WHERE categorie IN ( SELECT id
+                                        FROM Categorie
+                                        WHERE id = $id)";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $jeux = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+
+            return $jeux;
+        }
+
         function getNCategorie(int $id,int $n) : array {
             $req = "SELECT *
                     FROM jeu
