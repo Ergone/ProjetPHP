@@ -13,6 +13,7 @@
         <a href="viewLogin.html">Identification</a>
         <a href="viewNewAccount.html">Inscription</a>
         <a href="../controleur/ctrlgamepage.php">Jeux</a>
+        <a href="../controleur/ctrlcategoriepage.php?cat=1">Categorietest</a>
       </section>
       <title><?= $title ?></title>
     </head>
