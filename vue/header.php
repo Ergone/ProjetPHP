@@ -6,7 +6,7 @@
       <section>
         <a href="../controleur/ctrlhomepage.php">Acceuil</a>
         <a href="viewCart.php">Panier</a>
-        <a href="../controleur/ctrlcomptepage.php">Compte</a>
+        <a href="../controleur/ctrlcomptepage.php?ut=pansui">Comptetest</a>
       </section>
 
       <section>
