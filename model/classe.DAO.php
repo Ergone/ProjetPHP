@@ -54,6 +54,17 @@
             return $articles;
         }
 
+        function getUtilisateur(string $ut) : array {
+            $req = "SELECT *
+                    FROM utilisateur
+                    WHERE pseudo = '$ut' ";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $utilisateur = $a->fetchAll(PDO::FETCH_CLASS,"Utilisateur");
+
+            return $utilisateur;
+        }
+
         function getCategorie(int $id) : array {
             $req = "SELECT *
                     FROM categorie

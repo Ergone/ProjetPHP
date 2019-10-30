@@ -96,8 +96,12 @@
 
                     </article>
           <?php
-                }
+                }?>
+                <a href="?ref=<?=$prev?>">Prec</a>
+                <a href="?ref=<?=$suiv?>">Suiv</a>
+            <?php
             include 'footer.php';
            ?>
+
     </body>
 </html>
