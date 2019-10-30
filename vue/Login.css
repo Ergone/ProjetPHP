@@ -1,3 +1,12 @@
-body{
+head{
     background-color: #9E9E9E ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
