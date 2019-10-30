@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03727bd603f8ff15ea2852a658d1e214d86325a4
 <!DOCTYPE html>
   <html lang="en" dir="ltr">
    <head>
@@ -19,3 +23,7 @@
       </nav>  
       <title><?= $title ?></title>
     </head>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03727bd603f8ff15ea2852a658d1e214d86325a4
