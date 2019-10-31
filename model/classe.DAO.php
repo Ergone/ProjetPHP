@@ -38,9 +38,18 @@
             $req = "SELECT * FROM jeu";
             $a = $this->db->query($req);
             // Lance la requête
-            $categories = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
+            $jeux = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
 
-            return $categories;
+            return $jeux;
+        }
+
+        function getAllUtilisateur() : array {
+            $req = "SELECT * FROM utilisateur";
+            $a = $this->db->query($req);
+            // Lance la requête
+            $utilisateurs = $a->fetchAll(PDO::FETCH_CLASS,"Utilisateur");
+
+            return $utilisateurs;
         }
 
         function getJeu(int $ref) : array {

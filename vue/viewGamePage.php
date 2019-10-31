@@ -6,9 +6,9 @@
             <h1>Jeux</h1>
             <a href="?ref=<?=$prev?>">Prec</a>
             <a href="?ref=<?=$suiv?>">Suiv</a>
-            <aside class="filtres">
-        <form action="index.html" method="post">
-          <fieldset>
+            <!-- <aside class="filtres">
+        <form action="index.html" method="post"> -->
+          <!-- <fieldset>
             <legend>Filtres</legend>
             <fieldset>
               <legend>Prix</legend>
@@ -82,7 +82,7 @@
 
           </fieldset>
         </form>
-      </aside>
+      </aside> -->
                 <?php
                 foreach ($jeux as $value) {
                     ?><article class=""><?php
