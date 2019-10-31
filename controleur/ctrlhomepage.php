@@ -10,7 +10,7 @@ include_once("../model/classe.DAO.php");
 // Creation de l'unique objet DAO
 $dao = new DAO();
 $view = new View();
-
+session_start();
 
 
 $view->display("viewHomePage.php");

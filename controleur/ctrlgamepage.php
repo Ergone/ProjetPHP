@@ -9,7 +9,7 @@ include_once("../model/classe.DAO.php");
 
 // Creation de l'unique objet DAO
 $dao = new DAO();
-
+session_start();
 // Pas de catégorie
 $categorie = 0;
 $view = new View();

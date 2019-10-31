@@ -8,14 +8,11 @@ include_once("../framework/classe.vue.php");
 include_once("../model/classe.DAO.php");
 
 // Creation de l'unique objet DAO
+session_start();
 $dao = new DAO();
 $view = new View();
-session_start();
+$rate = false;
+$view->assign('rate',$rate);
 
-if (isset($_SESSION["session"])) {
-    $utilisateur = $dao->getUtilisateur($_SESSION["session"]);
-    $view->assign('utilisateur',$utilisateur);
-}
-
-$view->display("viewAccount.php");
+$view->display("viewLogin.php");
 ?>
