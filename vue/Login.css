@@ -1,12 +1,15 @@
-head{
-    background-color: #9E9E9E ;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+h1{
+    color: blue;
 }
 
+
 body{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #9E9E9E ;
+    display: flex;
+    
+}
+
+img, h1, form input, form a{
+    justify-content: center;
+    flex-direction: column;
 }
