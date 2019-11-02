@@ -19,7 +19,7 @@
             echo "'../controleur/ctrlconnexionpage.php'";
             echo ">Connexion</a></li>";
             echo "    <li><a href=";
-            echo "'../vue/viewNewAccount.php'";
+            echo "'../controleur/ctrlinscriptionpage.php'";
             echo ">Inscription</a></li>
             </ul>";
         }
