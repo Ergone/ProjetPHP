@@ -8,7 +8,9 @@
     <br>
     <?php
     echo $utilisateur[0]->getMail();?><br><?php
-    echo $utilisateur[0]->getLocalisation();?><br><?php
+    // if ($utilisateur[0]->getLocalisation()) {
+    //     echo $utilisateur[0]->getLocalisation();?><br><?php
+    // }
      ?>
   </body>
 
