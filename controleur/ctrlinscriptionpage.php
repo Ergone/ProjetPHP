@@ -15,7 +15,7 @@ $rate = false;
 $mauvaismdp = false;
 $pseudodejaexistant = false;
 $view->assign('rate',$rate);
-$view->assign('mauvaismdp',$mauvaismdp);
 $view->assign('pseudodejaexistant',$pseudodejaexistant);
-$view->display("viewLogin.php");
+$view->assign('mauvaismdp',$mauvaismdp);
+$view->display("viewNewAccount.php");
 ?>

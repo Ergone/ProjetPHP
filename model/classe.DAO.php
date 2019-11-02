@@ -63,10 +63,10 @@
             return $articles;
         }
 
-        function getUtilisateur(string $ut) : array {
+        function getUtilisateur(string $pseudo) : array {
             $req = "SELECT *
                     FROM utilisateur
-                    WHERE pseudo = '$ut' ";
+                    WHERE pseudo = '$pseudo' ";
             $a = $this->db->query($req);
             // Lance la requête
             $utilisateur = $a->fetchAll(PDO::FETCH_CLASS,"Utilisateur");
@@ -83,6 +83,13 @@
             $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
 
             return $articles;
+        }
+
+        function NouvelUtilisateur(string $pseudo,string $motdepasse,string $email) : int {
+
+            $sql = "INSERT INTO utilisateur VALUES ('$pseudo','$email','$motdepasse',null)";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
         }
 
         function getNJeu(int $ref,int $n) : array {
