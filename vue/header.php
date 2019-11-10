@@ -24,7 +24,7 @@
             </ul>";
         }
        ?>
-      <img src="../vue/logo.png" alt="logo">
+       <a href="../controleur/ctrlhomepage.php"><img src="../vue/logo.png" alt="logo"></a>
       <nav>
         <ul>
           <li><a href="../controleur/ctrlhomepage.php">Acceuil</a></li>
