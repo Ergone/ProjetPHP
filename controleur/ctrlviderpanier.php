@@ -14,8 +14,8 @@ session_start();
 $view = new View();
 if (isset($_GET['pseudo'])) {
     $a=$dao->ViderPanier($_GET['pseudo']);
-    $jeux = $dao->getPanier($_SESSION['session']);
-    $view->assign('pseudo',$_SESSION['session']);
+    $jeux = $dao->getPanier($_GET['pseudo']);
+    $view->assign('pseudo',$_GET['pseudo']);
 } else {
     $a=$dao->ViderPanier("user_x");
     $jeux = $dao->getPanier("user_x");
