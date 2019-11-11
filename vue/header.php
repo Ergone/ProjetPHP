@@ -28,7 +28,7 @@
       <nav>
         <ul>
           <li><a href="../controleur/ctrlhomepage.php">Acceuil</a></li>
-          <li><a href="viewCart.php">Panier</a></li>
+          <li><a href="../controleur/ctrlpanier.php">Panier</a></li>
           <?php
             if (isset($_SESSION["session"])) {
                 echo "<li><a href=";
