@@ -21,7 +21,7 @@
           foreach ($jeux as $value) {
               $prix+=$value->getPrix();
           }
-          echo $prix;
+          echo "prix   : ".$prix."€";
       }
       ?>
      <?php
