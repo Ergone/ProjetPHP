@@ -17,6 +17,7 @@ if(isset($_POST['pseudo']) && isset($_POST['motdepasse'])){
         if ($utilisateur[0]->getMotdepasse() == $_POST['motdepasse']) {
             session_start();
             $_SESSION["session"]= $utilisateur[0]->getPseudo();
+            $a = $dao->ViderPanier("user_x");
             $view->assign('pseudo',$utilisateur[0]->getPseudo());
             $view->display("viewHomePage.php");
         } else {

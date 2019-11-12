@@ -11,9 +11,9 @@
                     <?php
                     ?>
                             <a href="../controleur/ctrlgamedescriptionpage.php?jeu=<?php echo $value->getRef()?>"><img src="../data/images/<?php echo $value->getImage() ?>" width="300" height="200"></a><br>
-                        <?php echo $value->getQuantite();?><br>
-                        <?php echo $value->getPrix();?><br>
-                        <?php echo $value->getDescription();?><br><br><br>
+                            <?php echo "Quantité :".$value->getQuantite();?><br>
+                            <?php echo "Prix : ".$value->getPrix()."€";?><br>
+                            <?php echo $value->getDescription();?><br><br><br>
 
                     </article>
           <?php

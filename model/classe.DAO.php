@@ -74,6 +74,8 @@
             return $utilisateur;
         }
 
+
+
         function getCategorie(int $id) : array {
             $req = "SELECT *
                     FROM categorie
@@ -102,6 +104,18 @@
         function ViderPanier(string $pseudo) : int {
 
             $sql = "DELETE FROM panier WHERE pseudo='$pseudo'";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function Vendu(int $ref) : int {
+            $sql = "UPDATE jeu SET quantite=quantite-1 WHERE ref = $ref ";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function setLocalisation(string $localisation,string $pseudo) : int {
+            $sql = "UPDATE utilisateur SET localisation=$localisation WHERE pseudo = '$pseudo' ";
             $stmt = $this->db->exec($sql);
             return $stmt;
         }
