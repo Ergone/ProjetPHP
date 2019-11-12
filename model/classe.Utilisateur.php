@@ -27,6 +27,10 @@
           return $this->localisation;
         }
 
+        function setLocalisation(string $localisation ) : void {
+            $this->localisation = $localisation;
+        }
+
     }
 
 
