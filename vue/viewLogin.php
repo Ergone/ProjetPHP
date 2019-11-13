@@ -1,10 +1,10 @@
 <head>
-    <img src="../vue/logo.png" alt="logo" >
     <meta charset="utf-8">
     <link rel="stylesheet" href="Login.css">
     <title>Identification</title>
   </head>
   <body>
+    <img src="../vue/logo.png" alt="logo" >
     <h1>Identifiez-vous</h1>
     <?php
         if ($rate) {
