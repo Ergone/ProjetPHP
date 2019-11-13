@@ -4,7 +4,7 @@
   <head>
     <img src="../vue/logo.png" alt="logo" >
     <meta charset="utf-8">
-    <link rel="stylesheet" href="NewAccount.css">
+    <link rel="stylesheet" href="../vue/NewAccount.css">
     <title>Création compte</title>
   </head>
 
