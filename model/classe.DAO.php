@@ -63,16 +63,18 @@
             return $articles;
         }
 
-        function getUtilisateur(string $ut) : array {
+        function getUtilisateur(string $pseudo) : array {
             $req = "SELECT *
                     FROM utilisateur
-                    WHERE pseudo = '$ut' ";
+                    WHERE pseudo = '$pseudo' ";
             $a = $this->db->query($req);
             // Lance la requête
             $utilisateur = $a->fetchAll(PDO::FETCH_CLASS,"Utilisateur");
 
             return $utilisateur;
         }
+
+
 
         function getCategorie(int $id) : array {
             $req = "SELECT *
@@ -83,6 +85,39 @@
             $articles = $a->fetchAll(PDO::FETCH_CLASS,"Categorie");
 
             return $articles;
+        }
+
+        function NouvelUtilisateur(string $pseudo,string $motdepasse,string $email) : int {
+
+            $sql = "INSERT INTO utilisateur VALUES ('$pseudo','$email','$motdepasse',null)";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function AjoutPanier(string $pseudo,int $ref) : int {
+
+            $sql = "INSERT INTO panier VALUES ('$pseudo',$ref)";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function ViderPanier(string $pseudo) : int {
+
+            $sql = "DELETE FROM panier WHERE pseudo='$pseudo'";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function Vendu(int $ref) : int {
+            $sql = "UPDATE jeu SET quantite=quantite-1 WHERE ref = $ref ";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function setLocalisation(string $localisation,string $pseudo) : int {
+            $sql = "UPDATE utilisateur SET localisation=$localisation WHERE pseudo = '$pseudo' ";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
         }
 
         function getNJeu(int $ref,int $n) : array {
@@ -154,17 +189,19 @@
             return $articles;
         }
 
-        function getPanier (int $ref) : array {
+        function getPanier (string $pseudo) : array {
             $req = "SELECT *
                     FROM jeu
                     WHERE ref IN (SELECT ref
                                   FROM panier
-                                  WHERE ref= $ref)";
+                                  WHERE pseudo= '$pseudo')";
             $a = $this->db->query($req);
             // Lance la requête
             $articles = $a->fetchAll(PDO::FETCH_CLASS,"Jeu");
 
             return $articles;
         }
+
+
     }
 ?>

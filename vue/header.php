@@ -18,16 +18,16 @@
             echo "'../controleur/ctrlconnexionpage.php'";
             echo ">Connexion</a></li>";
             echo "    <li><a href=";
-            echo "'../vue/viewNewAccount.php'";
+            echo "'../controleur/ctrlinscriptionpage.php'";
             echo ">Inscription</a></li>
             </ul>";
         }
        ?>
-      <img src="../vue/logo.png" alt="logo">
+       <a href="../controleur/ctrlhomepage.php"><img src="../vue/logo.png" alt="logo"></a>
       <nav>
         <ul>
           <li><a href="../controleur/ctrlhomepage.php">Acceuil</a></li>
-          <li><a href="viewCart.php">Panier</a></li>
+          <li><a href="../controleur/ctrlpanier.php">Panier</a></li>
           <?php
             if (isset($_SESSION["session"])) {
                 echo "<li><a href=";
