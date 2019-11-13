@@ -27,9 +27,10 @@
           foreach ($jeux as $value) {
               $prix+=$value->getPrix();
           }
-            echo "Prix Total : ".$prix."€";
-            ?><a href="../controleur/ctrlviderpanier.php?pseudo=<?php echo $pseudo;?>"><p>Vider votre panier</p></a><?php
-            ?><a href="../controleur/ctrlvaliderpanier.php?pseudo=<?php echo $pseudo;?>&prix=<?php if ($prix==0) {echo "0";}else {echo $prix;}?>"><p>Valider Votre Commande</p></a><?php
+         echo "Prix Total : ".$prix."€";
+     ?>
+            <a href="../controleur/ctrlviderpanier.php?pseudo=<?= $pseudo ?>"><p>Vider votre panier</p></a>
+            <a href="../controleur/ctrlvaliderpanier.php?pseudo=<?=$pseudo?>&prix=<?php if ($prix==0) {echo "0";}else {echo $prix;}?>"><p>Valider Votre Commande</p></a><?php
       }
       ?>
 
