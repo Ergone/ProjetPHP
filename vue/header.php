@@ -2,7 +2,7 @@
   <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="../vue/Page.css">
+      <link rel="stylesheet" href="../vue/Page">
       <?php
         if (isset($_SESSION["session"])) {
             echo "<ul><li><a href=";
