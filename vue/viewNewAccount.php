@@ -16,7 +16,7 @@
             echo "requete non valide erreur du serveur.";
         }
      ?>
-    <form class="" action="../controleur/ctrlapresinscriptionpage.php" method="post">
+    <form action="../controleur/ctrlapresinscriptionpage.php" method="post">
       <input type="text" name="pseudo" placeholder="Pseudo" required autofocus><br>
       <input type="email" name="mail" placeholder="Adresse E-mail" required><br>
       <input type="password" name="motdepasse" placeholder="Mot de passe" required><br>
