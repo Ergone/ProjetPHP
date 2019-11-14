@@ -108,6 +108,12 @@
             return $stmt;
         }
 
+        function EnleverJeu(string $pseudo, int $ref) : int {
+            $sql = "DELETE FROM panier WHERE pseudo='$pseudo' AND ref = $ref";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
         function Vendu(int $ref) : int {
             $sql = "UPDATE jeu SET quantite=quantite-1 WHERE ref = $ref ";
             $stmt = $this->db->exec($sql);

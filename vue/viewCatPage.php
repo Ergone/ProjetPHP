@@ -3,7 +3,7 @@
   include 'header.php';
  ?>
     <body>
-            <h1>Jeux</h1>
+            <h1>Catégorie</h1>
                 <?php
                 foreach ($jeux as $value) {
                     ?><article class=""><?php
