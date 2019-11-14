@@ -3,7 +3,7 @@
   include 'header.php';
  ?>
     <body>
-            <h1>Catégorie </h1>
+            <h1>Catégorie <?php echo $jeux[0]->getCategorie(); ?></h1>
             <form action="../controleur/ctrlcategoriepage.php" method="get">
                 <select name="cat">
                     <option value="1">Aventure</option>
