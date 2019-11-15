@@ -89,7 +89,7 @@
 
         function NouvelUtilisateur(string $pseudo,string $motdepasse,string $email) : int {
 
-            $sql = "INSERT INTO utilisateur VALUES ('$pseudo','$email','$motdepasse',null)";
+            $sql = "INSERT INTO utilisateur VALUES ('$pseudo','$email','$motdepasse','')";
             $stmt = $this->db->exec($sql);
             return $stmt;
         }
@@ -104,6 +104,12 @@
         function ViderPanier(string $pseudo) : int {
 
             $sql = "DELETE FROM panier WHERE pseudo='$pseudo'";
+            $stmt = $this->db->exec($sql);
+            return $stmt;
+        }
+
+        function EnleverJeu(string $pseudo, int $ref) : int {
+            $sql = "DELETE FROM panier WHERE pseudo='$pseudo' AND ref = $ref";
             $stmt = $this->db->exec($sql);
             return $stmt;
         }

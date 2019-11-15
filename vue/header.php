@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
   <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="../vue/Page.css">
+      <link rel="stylesheet" href="../vue/Page">
       <?php
         if (isset($_SESSION["session"])) {
             echo "<ul><li><a href=";
@@ -28,7 +27,8 @@
       <nav>
         <ul>
           <li><a href="../controleur/ctrlhomepage.php">Acceuil</a></li>
-          <li><a href="../controleur/ctrlpanier.php">Panier</a></li>
+          <li><a href="../controleur/ctrlgamepage.php">Jeux</a></li>
+          <li><a href="../controleur/ctrlcategoriepage.php">Categorie</a></li>
           <?php
             if (isset($_SESSION["session"])) {
                 echo "<li><a href=";
@@ -37,8 +37,7 @@
             } else {
             }
            ?>
-          <li><a href="../controleur/ctrlgamepage.php">Jeux</a></li>
-          <li><a href="../controleur/ctrlcategoriepage.php?cat=1">Categorietest</a></li>
+          <li><a href="../controleur/ctrlpanier.php">Panier</a></li>
         </ul>
       </nav>
       <title><?= $title ?></title>

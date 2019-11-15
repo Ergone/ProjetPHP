@@ -60,5 +60,36 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
 }
+
+a{
+    text-decoration: none;
+}
+
+td a{
+    color: #8a25b1;
+}
+
+td img{
+      border-radius: 10%;
+  }
+
+  button{
+    background-color: #BDBDBD;
+    border: 2px solid #8a25b1;
+    border-radius: 20%;
+    height: 25px;
+    width: 200px;
+  }
+
+  button:hover {
+    background-color: #8a25b1;
+  }
+
+  button:hover a{
+      color: white;
+  }
+
+  button a{
+      color: black;
+  }
