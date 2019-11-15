@@ -15,7 +15,7 @@ session_start();
 if (isset($_GET['pseudo']) && isset($_POST['lieu']) && isset($_POST['num1']) && isset($_POST['num2'])) {
     if (isset($_SESSION['session'])) {
         $utilisateur = $dao->getUtilisateur($_GET['pseudo']);
-        if($utilisateur[0]->getLocalisation()==null){
+        if($utilisateur[0]->getLocalisation()==''){
             $a = $dao->setLocalisation($_POST['lieu'],$utilisateur[0]->getPseudo());
         }
     }
